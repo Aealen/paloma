@@ -1,0 +1,7 @@
+[      96ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[      97ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257

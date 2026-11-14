@@ -1,0 +1,88 @@
+[      40ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[      40ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[  187352ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[  187353ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[  735061ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[  735061ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[  772106ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[  772106ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[  983515ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[  983515ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[ 1014882ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[ 1014882ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[ 1033089ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9257/src/App.tsx?t=1794578659374:1
+[ 1033089ms] [INFO] [hmr] /src/App.tsx failed to apply HMR as it's within a circular import. Reloading page to reset the execution order. To debug and break the circular import, you can run `vite --debug hmr` to log the circular dependency path if a file change triggered it. @ http://127.0.0.1:9257/@vite/client:1020
+[ 1033089ms] [ERROR] [vite] Failed to reload /src/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://127.0.0.1:9257/@vite/client:1011
+[ 1033158ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:9257/src/App.tsx?t=1794578659374:1
+[ 1123686ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[ 1123686ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[ 1366010ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[ 1366010ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[ 1507545ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[ 1507545ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[ 1539507ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[ 1539508ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[ 1559496ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[ 1559496ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257
+[ 2108854ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9257/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=c62a1be5:17220
+[ 2108854ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9257/node_modules/.vite/deps/@wailsio_runtime.js?v=c62a1be5:257

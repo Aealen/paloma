@@ -1,0 +1,39 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - button "Paloma 待机，收起面板" [expanded] [ref=e15] [cursor=pointer]
+    - generic [ref=e16]:
+      - generic "拖动窗口" [ref=e17]: ⠿
+      - generic [ref=e18]:
+        - strong [ref=e19]: paloma
+        - generic [ref=e20]: 桌面小精灵
+      - paragraph [ref=e21]: Paloma 已准备好
+      - button "退出 Paloma" [ref=e22] [cursor=pointer]: ×
+  - region "Paloma 面板" [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - text: YOUR LITTLE COMPANION
+        - heading "今天，有我陪着。" [level=1] [ref=e26]
+      - button "收起面板" [ref=e27] [cursor=pointer]: ×
+    - navigation "面板视图" [ref=e28]:
+      - button "活动" [ref=e29] [cursor=pointer]
+      - button "待办" [active] [ref=e30] [cursor=pointer]
+      - button "计划" [ref=e31] [cursor=pointer]
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - text: YOUR FOCUS
+          - heading "待办清单" [level=2] [ref=e65]
+        - generic [ref=e66]: 0 项待完成
+      - generic [ref=e67]:
+        - generic [ref=e68]: 待办内容
+        - textbox "待办内容" [ref=e69]:
+          - /placeholder: 记下一件小事…
+        - button "添加" [disabled] [ref=e70]
+      - generic [ref=e71]:
+        - generic [aria-hidden] [ref=e72]: ✳
+        - strong [ref=e73]: 今天还没有待办
+        - paragraph [ref=e74]: 把想记住的事情留在这里。
+      - paragraph [ref=e75]: 当前为内存演示，退出应用后不会保存。
+    - generic [ref=e58]:
+      - generic [ref=e60]: 演示模式 · 未连接真实 Agent
+      - generic [ref=e61]: PALOMA 0.1

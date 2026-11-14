@@ -1,0 +1,11 @@
+[      93ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:9245/node_modules/.vite/deps/react-dom-BaVhYn83.js?v=04be5a30:17220
+[      94ms] [WARNING] 
+%c⚠️ Browser Environment Detected %c
+
+%cOnly UI previews are available in the browser. For full functionality, please run the application in desktop mode.
+More information at: https://v3.wails.io/learn/build/#using-a-browser-for-development
+ background: #ffffff; color: #000000; font-weight: bold; padding: 4px 8px; border-radius: 4px; border: 2px solid #000000; background: transparent; color: #ffffff; font-style: italic; font-weight: bold; @ http://127.0.0.1:9245/node_modules/.vite/deps/@wailsio_runtime.js?v=3056d4cc:257
+[  705433ms] [LOG] [vite] server connection lost. Polling for restart... @ http://127.0.0.1:9245/@vite/client:1078
+[  837857ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://127.0.0.1:9245/src/main.tsx?t=1794564226124:1
+[  837857ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://127.0.0.1:9245/@vite/client:1
+[  837862ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ http://127.0.0.1:9245/@react-refresh:1

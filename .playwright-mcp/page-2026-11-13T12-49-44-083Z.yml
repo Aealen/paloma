@@ -1,0 +1,47 @@
+- main [ref=f3e3]:
+  - generic [ref=f3e4]:
+    - button "Paloma 待机，收起面板，按住可拖动" [expanded] [ref=f3e21]
+    - generic [ref=f3e22]:
+      - generic "拖动窗口" [ref=f3e23]: ⠿
+      - generic [ref=f3e24]:
+        - strong [ref=f3e25]: paloma
+        - generic [ref=f3e26]: 桌面小精灵
+      - paragraph [ref=f3e27]: Paloma 已准备好
+      - button "退出 Paloma" [ref=f3e28] [cursor=pointer]: ×
+  - region "Paloma 面板" [ref=f3e29]:
+    - generic [ref=f3e30]:
+      - heading "Paloma" [level=1] [ref=f3e31]
+      - button "收起面板" [active] [ref=f3e32] [cursor=pointer]: ×
+    - navigation "面板视图" [ref=f3e33]:
+      - button "活动" [ref=f3e34] [cursor=pointer]
+      - button "待办" [ref=f3e35] [cursor=pointer]
+      - button "计划" [ref=f3e36] [cursor=pointer]
+    - generic [ref=f3e37]:
+      - article [ref=f3e38]:
+        - generic [ref=f3e39]:
+          - generic [ref=f3e40]: Paloma
+          - time [ref=f3e41]: 20:49
+        - heading "Paloma 已准备好" [level=2] [ref=f3e42]
+        - paragraph [ref=f3e43]: 等待新的活动
+        - generic [ref=f3e44]: 待机中
+      - generic [ref=f3e46]:
+        - heading "最近活动" [level=2] [ref=f3e47]
+        - generic [ref=f3e48]: 本次运行
+      - paragraph [ref=f3e49]: 暂时没有新活动
+      - generic [ref=f3e50]:
+        - heading "状态演示" [level=2] [ref=f3e51]
+        - button "自动演示" [ref=f3e52] [cursor=pointer]
+      - group "脸型切换" [ref=f3e53]:
+        - button "手绘脸" [ref=f3e54] [cursor=pointer]
+        - button "Aora 脸" [pressed] [ref=f3e55] [cursor=pointer]
+      - generic "模拟状态" [ref=f3e56]:
+        - button "待机" [pressed] [ref=f3e57] [cursor=pointer]
+        - button "思考" [ref=f3e58] [cursor=pointer]
+        - button "工作" [ref=f3e59] [cursor=pointer]
+        - button "确认" [ref=f3e60] [cursor=pointer]
+        - button "完成" [ref=f3e61] [cursor=pointer]
+        - button "异常" [ref=f3e62] [cursor=pointer]
+      - paragraph [ref=f3e63]: ZCode、DSH 尚未接入
+    - generic [ref=f3e64]:
+      - generic [ref=f3e66]: 演示模式 · 未连接真实 Agent
+      - generic [ref=f3e67]: PALOMA 0.1

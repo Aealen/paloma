@@ -1,0 +1,50 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - button "Paloma 等待确认，收起面板" [expanded] [ref=e58] [cursor=pointer]
+    - generic [ref=e15]:
+      - generic "拖动窗口" [ref=e16]: ⠿
+      - generic [ref=e17]:
+        - strong [ref=e18]: paloma
+        - generic [ref=e19]: 桌面小精灵
+      - paragraph [ref=e20]: 等你确认一项操作
+      - button "退出 Paloma" [ref=e21] [cursor=pointer]: ×
+  - region "Paloma 面板" [ref=e22]:
+    - generic [ref=e23]:
+      - heading "Paloma" [level=1] [ref=e24]
+      - button "收起面板" [ref=e25] [cursor=pointer]: ×
+    - navigation "面板视图" [ref=e26]:
+      - button "活动" [ref=e27] [cursor=pointer]
+      - button "待办" [ref=e28] [cursor=pointer]
+      - button "计划" [ref=e29] [cursor=pointer]
+    - generic [ref=e30]:
+      - article [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e33]: ZCode
+          - time [ref=e34]: 19:45
+        - heading "等你确认一项操作" [level=2] [ref=e59]
+        - paragraph [ref=e36]: 这是用于演示的待确认消息。
+        - generic [ref=e37]: 等待确认
+        - button "模拟完成" [ref=e60] [cursor=pointer]
+      - generic [ref=e39]:
+        - heading "最近活动" [level=2] [ref=e40]
+        - generic [ref=e41]: 本次运行
+      - list [ref=e61]:
+        - listitem [ref=e62]:
+          - generic [ref=e64]:
+            - strong [ref=e65]: 等你确认一项操作
+            - generic [ref=e66]: ZCode · 等待确认
+          - time [ref=e67]: 19:45
+      - generic [ref=e43]:
+        - heading "状态演示" [level=2] [ref=e44]
+        - button "自动演示" [ref=e45] [cursor=pointer]
+      - generic "模拟状态" [ref=e46]:
+        - button "待机" [ref=e47] [cursor=pointer]
+        - button "思考" [ref=e48] [cursor=pointer]
+        - button "工作" [ref=e49] [cursor=pointer]
+        - button "确认" [active] [pressed] [ref=e50] [cursor=pointer]
+        - button "完成" [ref=e51] [cursor=pointer]
+        - button "异常" [ref=e52] [cursor=pointer]
+      - paragraph [ref=e53]: ZCode、DSH 尚未接入
+    - generic [ref=e54]:
+      - generic [ref=e56]: 演示模式 · 未连接真实 Agent
+      - generic [ref=e57]: PALOMA 0.1
