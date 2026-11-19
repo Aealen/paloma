@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
 import type { AppSnapshot, AgentEvent } from '../types'
-import type { FaceKind } from './Mascot'
 import { SPRITE_PALETTE, type SpriteColorKey } from '../App'
 
 type ActivityPanelProps = {
@@ -8,8 +7,6 @@ type ActivityPanelProps = {
   selectedEvent: AgentEvent | null
   activeTab: 'activity' | 'today' | 'plan'
   error: string
-  face: FaceKind
-  onFaceChange: (face: FaceKind) => void
   colorKey: SpriteColorKey
   onColorChange: (key: SpriteColorKey) => void
   onTabChange: (tab: 'activity' | 'today' | 'plan') => void
@@ -38,7 +35,7 @@ const stateLabel = (event: AgentEvent) => {
   }
 }
 
-export function ActivityPanel({ snapshot, selectedEvent, activeTab, error, face, onFaceChange, colorKey, onColorChange, onTabChange, onClose, onAddTodo, onCompleteTodo, onSimulate, onToggleSimulation }: ActivityPanelProps) {
+export function ActivityPanel({ snapshot, selectedEvent, activeTab, error, colorKey, onColorChange, onTabChange, onClose, onAddTodo, onCompleteTodo, onSimulate, onToggleSimulation }: ActivityPanelProps) {
   const { activity, providers, todos, simulationActive } = snapshot
   const event = selectedEvent ?? snapshot.event
   const [draft, setDraft] = useState('')
@@ -61,7 +58,7 @@ export function ActivityPanel({ snapshot, selectedEvent, activeTab, error, face,
   }
 
   return (
-    <section className="activity-panel" aria-label="Paloma 面板">
+    <section className="activity-panel hit" aria-label="Paloma 面板">
       <header className="panel-header">
         <h1>Paloma</h1>
         <button ref={closeRef} className="icon-button close-panel" type="button" aria-label="收起面板" onClick={onClose}>×</button>
@@ -87,10 +84,6 @@ export function ActivityPanel({ snapshot, selectedEvent, activeTab, error, face,
           <span className={`activity-dot state-${item.status}`} /><span className="activity-copy"><strong>{item.title}</strong><small>{sourceLabel(item.providerId)} · {stateLabel(item)}</small></span><time dateTime={item.createdAt}>{timeLabel(item.createdAt)}</time>
         </li>)}</ul>}
         <div className="section-heading"><h2>状态演示</h2><button className="text-button" type="button" onClick={() => void onToggleSimulation()}>{simulationActive ? '停止演示' : '自动演示'}</button></div>
-        <div className="face-switch" role="group" aria-label="脸型切换">
-          <button type="button" aria-pressed={face === 'hand'} onClick={() => onFaceChange('hand')}>手绘脸</button>
-          <button type="button" aria-pressed={face === 'aora'} onClick={() => onFaceChange('aora')}>Aora 脸</button>
-        </div>
         <div className="color-picker" role="group" aria-label="精灵颜色">
           {SPRITE_PALETTE.map((item) => (
             <button

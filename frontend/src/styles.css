@@ -11,31 +11,30 @@
   --raised: #232325;
   --accent: #5d97f5;
   --line: rgba(255, 255, 255, .09);
-  --wails-draggable: drag;
 }
 
 * { box-sizing: border-box; }
 html, body, #root { width: 100%; height: 100%; margin: 0; background: transparent; }
 body { overflow: hidden; color: var(--text); }
-button, input { color: inherit; font: inherit; --wails-draggable: no-drag; }
+button, input { color: inherit; font: inherit; }
 button { cursor: pointer; }
 button:focus-visible, input:focus-visible { outline: 2px solid #a8c8ff; outline-offset: 2px; }
 button:disabled { cursor: default; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
-.desktop-island { position: relative; width: 100%; height: 100%; overflow: hidden; --wails-draggable: drag; }
+/* 点击穿透分层：根容器不拦截鼠标（透明区域直接穿透到桌面），
+   交互元素以 .hit 标记恢复命中（配合主进程 setIgnoreMouseEvents）。 */
+.desktop-island { position: relative; width: 100%; height: 100%; overflow: hidden; pointer-events: none; }
+.desktop-island .hit { pointer-events: auto; }
 .desktop-island.mode-panel { border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
-.desktop-island.browser-preview { margin: 0 auto; }
+.desktop-island.mode-panel .activity-panel, .desktop-island.mode-panel .island-heading { pointer-events: auto; }
+.desktop-island.browser-preview { margin: 0 auto; pointer-events: auto; }
 .browser-preview.mode-compact { max-width: 144px; max-height: 104px; }
 .browser-preview.mode-notification { max-width: 350px; max-height: 112px; }
 .browser-preview.mode-panel { max-width: 420px; max-height: 570px; }
 .island-top { position: relative; display: flex; height: 104px; align-items: center; }
 .mascot-slot { display: grid; width: 144px; height: 104px; flex: 0 0 144px; place-items: center; }
 .eye-button { position: relative; z-index: 1; display: grid; width: 144px; height: 104px; place-items: center; padding: 0; border: 0; border-radius: 16px; background: transparent; cursor: grab; }
-.drag-capture { position: absolute; inset: 0; --wails-draggable: drag; cursor: grab; }
-.drag-capture:active { cursor: grabbing; }
-.eye-button:active { cursor: grabbing; }
-/* 球体图形不拦截指针：按下目标落在按钮（HTML 元素）上，Wails 原生拖动判定才有效 */
 .eye-button:active { cursor: grabbing; }
 /* 接地阴影：小精灵悬浮在桌面上，随呼吸同步缩放，被拖起时消失 */
 .mascot-shadow { position: absolute; top: 84px; left: 50%; width: 62px; height: 12px; margin-left: -31px; border-radius: 50%; background: radial-gradient(ellipse, rgba(0, 0, 0, .42), transparent 72%); filter: blur(3px); transform-origin: center; animation: shadow-breathe 5s ease-in-out infinite; }
@@ -66,7 +65,7 @@ button:disabled { cursor: default; }
 .mood-worried .eye-art { animation: mascot-droop 2.6s ease-in-out infinite; }
 .is-dragging .eye-art, .is-pressed .eye-art { animation: none; }
 
-.notification-bubble { display: flex; min-width: 0; flex: 1; align-items: flex-start; margin: 0 12px 0 0; padding: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--raised); box-shadow: 0 8px 24px rgba(0,0,0,.2); animation: appear 180ms ease-out both; --wails-draggable: no-drag; }
+.notification-bubble { display: flex; min-width: 0; flex: 1; align-items: flex-start; margin: 0 12px 0 0; padding: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--raised); box-shadow: 0 8px 24px rgba(0,0,0,.2); animation: appear 180ms ease-out both; }
 .bubble-content { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: 4px; padding: 0; border: 0; background: transparent; text-align: left; }
 .bubble-source { color: var(--secondary); font-size: 11px; }
 .bubble-content strong { max-width: 100%; overflow: hidden; color: var(--text); font-size: 13px; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
@@ -76,7 +75,6 @@ button:disabled { cursor: default; }
 .bubble-dismiss:hover, .window-close:hover, .icon-button:hover { background: #343436; color: var(--text); }
 
 .island-heading { position: relative; display: flex; min-width: 0; flex: 1; flex-direction: column; justify-content: center; align-self: stretch; padding: 20px 40px 0 0; }
-.island-drag { position: absolute; top: 4px; right: 48px; left: 0; height: 24px; text-align: center; --wails-draggable: drag; }
 .drag-dots { color: var(--muted); font-size: 18px; line-height: 20px; }
 .brand-line { display: flex; align-items: baseline; gap: 8px; }.brand-line strong { font-size: 16px; font-weight: 600; }.brand-line span { color: var(--secondary); font-size: 11px; }
 .island-heading p { max-width: 240px; margin: 4px 0 0; overflow: hidden; color: var(--secondary); font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
@@ -102,13 +100,12 @@ button:disabled { cursor: default; }
 .section-heading { display: flex; justify-content: space-between; align-items: center; margin: 20px 0 8px; }.section-heading h2 { margin: 0; font-size: 13px; font-weight: 600; }.section-heading > span { color: var(--muted); font-size: 11px; }.first-heading { margin-top: 0; }
 .list-empty { margin: 0; padding: 8px 0; color: var(--secondary); font-size: 12px; }.activity-list, .todo-list { display: flex; flex-direction: column; gap: 4px; margin: 0; padding: 0; list-style: none; }.activity-list li { display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 8px; border-radius: 8px; background: rgba(255,255,255,.025); }.activity-copy { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: 4px; }.activity-copy strong { overflow: hidden; color: var(--text); font-size: 12px; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }.activity-copy small { color: var(--secondary); font-size: 11px; }
 .demo-controls { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; }.demo-controls button { min-height: 32px; padding: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--raised); color: var(--secondary); font-size: 11px; }.demo-controls button:hover, .demo-controls button[aria-pressed=true] { border-color: rgba(255,255,255,.2); background: #36363a; color: var(--text); }
-.face-switch { display: flex; gap: 4px; margin-top: 6px; }.face-switch button { flex: 1; min-height: 30px; padding: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--raised); color: var(--secondary); font-size: 11px; }.face-switch button[aria-pressed=true] { border-color: rgba(255,255,255,.2); background: #36363a; color: var(--text); }
 .color-picker { display: flex; gap: 8px; margin-top: 8px; }.color-chip { width: 24px; height: 24px; padding: 0; border: 2px solid transparent; border-radius: 50%; cursor: pointer; }.color-chip.is-selected { border-color: #fff; box-shadow: 0 0 0 2px rgba(255,255,255,.25); }
 .aora-face { display: grid; width: 96px; height: 96px; place-items: center; }
 
 /* 边缘状态条：像手机灵动岛一样吸附在屏幕侧边 */
 .desktop-island.mode-dock-left .island-top, .desktop-island.mode-dock-right .island-top { display: grid; width: 100%; height: 100%; place-items: center; }
-.edge-dock { display: flex; width: 112px; height: 244px; flex-direction: column; align-items: center; justify-content: center; gap: 14px; border: 1px solid rgba(224, 244, 233, .12); border-radius: 17px; background: rgba(24, 24, 26, .97); box-shadow: 0 6px 20px rgba(0, 0, 0, .3); cursor: grab; transition: transform 150ms ease; --wails-draggable: drag; }
+.edge-dock { display: flex; width: 112px; height: 244px; flex-direction: column; align-items: center; justify-content: center; gap: 14px; border: 1px solid rgba(224, 244, 233, .12); border-radius: 17px; background: rgba(24, 24, 26, .97); box-shadow: 0 6px 20px rgba(0, 0, 0, .3); cursor: grab; transition: transform 150ms ease; }
 .edge-dock:active { cursor: grabbing; }
 .edge-dock.is-pressed { transform: scale(.93); }
 .dock-dot { width: 10px; height: 10px; border-radius: 50%; }
