@@ -1,0 +1,9 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "主窗口默认能力：核心事件与窗口访问，暂无额外插件。",
+  "windows": ["main"],
+  "permissions": [
+    "core:default"
+  ]
+}
